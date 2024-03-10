@@ -1,6 +1,5 @@
 import invariant from 'invariant';
 
-
 export class RefMap {
   constructor(core) {
     this._map = new Map();

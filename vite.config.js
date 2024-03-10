@@ -1,5 +1,6 @@
 import { defineConfig } from 'vite'
-import react from '@vitejs/plugin-react'
+import { fileURLToPath, URL } from 'node:url';
+import vue from '@vitejs/plugin-vue'
 
 import { execSync } from 'node:child_process'
 
@@ -37,5 +38,8 @@ export default defineConfig({
     __COMMIT_HASH__: JSON.stringify(currentCommit),
     __BUILD_DATE__: JSON.stringify(dateString),
   },
-  plugins: [react(), pubDirReloadPlugin()],
+  alias: {
+    '@': fileURLToPath(new URL('./src', import.meta.url))
+  },
+  plugins: [vue(), pubDirReloadPlugin()],
 })

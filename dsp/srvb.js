@@ -87,7 +87,7 @@ function dampFDN(name, sampleRate, size, decay, modDepth, ...ins) {
     // Each delay line here will be ((i + 1) * 17)ms long, multiplied by [1, 4]
     // depending on the size parameter. So at size = 0, delay lines are 17, 34, 51, ...,
     // and at size = 1 we have 68, 136, ..., all in ms here.
-    const delaySize = el.mul(el.add(1.00, el.mul(3, size)), ms2samps((i + 1) * 17));
+    const delaySize = el.mul(el.add(1.00, el.mul(3, size)), ms2samps((i + 1) * 51));
 
     // Then we modulate the read position for each tap to add some chorus in the
     // delay network.

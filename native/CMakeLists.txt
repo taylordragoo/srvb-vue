@@ -2,7 +2,7 @@ cmake_minimum_required(VERSION 3.15)
 project(Elem_SRVB VERSION 0.1.0)
 
 
-set(TARGET_NAME SRVB)
+set(TARGET_NAME AudioGlue)
 set(ASSETS_DIR ${CMAKE_SOURCE_DIR}/../dist/)
 
 option(JUCE_ENABLE_MODULE_SOURCE_GROUPS "Enable Module Source Groups" ON)

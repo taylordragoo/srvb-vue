@@ -1,11 +1,8 @@
-# SRVB
+# SRVB-VUE
 
 SRVB is a small digital reverb audio plugin (VST3/AU) for MacOS and Windows.
 
-This project demonstrates one way to write an audio plugin using JavaScript and
-familiar web technologies, and while there are several variants on this approach,
-it is meant to be both a compelling example and a good starting point for audio
-plugins made with a similar architecture.
+This project demonstrates one way to write an audio plugin using JavaScript, Vue 3, Pinia and Vite.
 
 ## Overview
 
