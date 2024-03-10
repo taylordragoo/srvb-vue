@@ -43,8 +43,8 @@ Next, we fetch the SRVB project and its dependencies,
 
 ```bash
 # Clone the project with its submodules
-git clone --recurse-submodules https://github.com/elemaudio/srvb.git
-cd srvb
+git clone --recurse-submodules https://github.com/taylordragoo/srvb-vue.git
+cd srvb-vue
 
 # Install npm dependencies
 npm install
